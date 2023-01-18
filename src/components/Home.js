@@ -5,7 +5,7 @@ export default function Home() {
  return (
    <View style={styles.main}>
 
-        <View style={styles.mainPart1}>
+        <View>
 
             <Image source={require("../Images/Internet Picture.jpg")} />
             <Image />
@@ -22,27 +22,11 @@ const styles = StyleSheet.create({
     main: {
 
         flex: 1,
-        display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "blue"
 
     },
-    mainPart1: {
-
-        overflow: "hidden",
     
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-    
-    },
-    mainImg: {
-
-        width: "100%"
-    
-    }
-    
-
 })
