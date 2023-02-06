@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "poke-app",
+    "name": "Dev_Victor",
     "slug": "poke-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,16 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "my-portifolio"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "dev_victor.portifolio_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "62aa9ae5-191f-4e3d-892f-6e8aa37da1d5"
+      }
     }
   }
 }

@@ -27,13 +27,14 @@ const styles = StyleSheet.create({
 
     body: {
 
+        zIndex: 1,
         flexWrap: "nowrap",
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
         width: "100%",
         height: "10%",
-        backgroundColor: "#000",
+        backgroundColor: "#1A1A1A",
         padding: 15,
 
     },
@@ -41,8 +42,8 @@ const styles = StyleSheet.create({
 
         marginTop: 0,
         width: 50, 
-        height: 45,
-        borderRadius: 50,
+        height: 50,
+        borderRadius: 100,
         marginRight: 10,
       // Pode se usar o "Contain"
       // Ou também o stretch
@@ -51,13 +52,13 @@ const styles = StyleSheet.create({
 
     text: {
 
-        color: "#fff"
+        color: "#8A45DE"
 
     },
 
     textPage: {
 
-        color: "#fff",
+        color: "#8A45DE",
         marginRight: "1%"
 
     },

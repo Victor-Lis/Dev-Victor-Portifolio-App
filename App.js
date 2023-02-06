@@ -4,10 +4,12 @@ import { StyleSheet, Text, View, SafeAreaView, Modal, TouchableOpacity } from 'r
 
 import Navbar from './src/components/Navbar';
 import Home from './src/components/Home';
+import Footer from './src/components/Footer';
+import MyProjects from './src/components/MyProjects';
 
 export default function App() {
 
-  const [actualPage, setActualPage] = useState("Home")
+  const [actualPage, setActualPage] = useState("Meus Projetos")
   const [actualPageVisible, setActualPageVisible] = useState(true)
 
   function tradePage(){
@@ -31,20 +33,18 @@ export default function App() {
       <StatusBar hidden = {true}/>
       <Modal visible={actualPageVisible}>
 
-        <Navbar style={{zIndex: 1}} actualPage={actualPage} tradePage={tradePage} />
+        <Navbar actualPage={actualPage} tradePage={tradePage} />
 
-        <Home style={{zIndex: -1}}/>
+        <Home/>
+
+        <Footer />
 
       </Modal>
       <Modal visible={!actualPageVisible}>
         
-        <Navbar style={{zIndex: 1}} actualPage={actualPage} tradePage={tradePage} />
+        <Navbar actualPage={actualPage} tradePage={tradePage} />
 
-        <View>
-
-          <Text style={{color: "#fff"}}> Meus Projetos </Text>
-
-        </View>
+        <MyProjects/>
 
       </Modal>  
     </SafeAreaView>
